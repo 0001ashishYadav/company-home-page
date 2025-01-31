@@ -1,0 +1,382 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url('https://img.freepik.com/free-photo/big-city_1127-3102.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0px 0px 30px grey inset, 0px 0px 60px grey inset; */
+}
+
+.side-container {
+
+  animation-name: side-container;
+  /* animation-delay: 1s; */
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+
+}
+
+@keyframes side-container {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 10;
+  }
+  
+}
+
+.main-container {
+  height: 580px;
+  width: 1265px;
+  display: flex;
+  justify-content: space-evenly;
+  /* gap: 20px; */
+  margin: 20px;
+  margin-left: 50px;
+  /* overflow: hidden; */
+}
+
+.hex-container {
+
+  position: relative;
+
+}
+
+.hex-up-container{
+  display:flex;
+  opacity: 10;
+  gap: 20px;
+    
+
+}
+
+.hex-down-container{
+  display: flex;
+  opacity: 10;
+  gap: 20px;
+  margin-top: 26px;
+  /* animation-name: hex-up;
+  animation-delay: 1.3s;
+  animation-duration: 3s;
+  animation-iteration-count: 1; */
+}
+
+.card-1 {
+  height: 141px;
+  width: 290px;
+  margin-bottom: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color:  rgb(56, 9, 123);
+  /* background-color: white; */
+  box-shadow: 10px 10px 30px grey;
+}
+
+.card-1-content {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.card-1-logo-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  width: 75px;
+  border: 3px solid rgb(56, 9, 123);
+  border-radius: 80%;
+}
+
+.card-1 i {
+  font-weight: 900;
+  font-size: 60px;
+}
+
+.card-2 {
+  
+  box-shadow: 10px 10px 30px grey;
+  
+}
+
+
+.card-2-up {
+
+  height: 30px;
+  width: 290px;
+  background-color:  rgb(40, 6, 89);
+}
+
+.card-2-down {
+  position: relative;
+  height: 382.5px;
+  width: 290px;
+  background-color: rgb(21, 21, 199);
+  padding: 100px 30px 0px 30px;
+}
+
+.card-2-plus-icon {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80%;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color:   rgb(48, 6, 102);
+}
+
+.card-2-plus-icon i {
+  font-size: 30px;
+  color:  rgb(21, 21, 199);
+}
+
+.card-2-down-p {
+  position: relative;
+  height: 120px;
+  width: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-2-down p {
+  position: absolute;
+  bottom: 0px;
+  font-size: 50px;
+  color: whitesmoke;
+  animation-name: card-2-down;
+  /* animation-delay: 2s; */
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  
+}
+
+@keyframes card-2-down {
+
+  0% {
+    bottom: -130px;
+  }
+
+  50% {
+    bottom: 0px;
+  }
+  
+  
+}
+
+.card-2-down-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 90px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+  
+}
+
+
+.card-2-down-arr {
+  position: absolute;
+  right: 0px;
+  height: 80px;
+  width: 80px;
+  border: 2px solid whitesmoke;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: arrow;
+  /* animation-delay: 2s; */
+  animation-duration: 2s;
+  /* animation-timing-function: linear; */
+  animation-iteration-count: 1;
+  
+}
+
+@keyframes arrow {
+
+  0% {
+    right: -70px;
+  }
+
+  50% {
+    right: 0px;
+  }
+  
+  
+}
+
+.card-2-down-arr i {
+  color: whitesmoke;
+  font-size: 60px;
+ 
+}
+
+
+.wh-card {
+  position: relative;
+  height: 275px;
+  width: 290px;
+  background-color: white;
+  box-shadow: 10px 10px 30px grey;
+  overflow: hidden;
+  padding: 30px;
+  animation-name: hex-wh-card;
+  /* animation-delay: 1s; */
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  /* animation-timing-function: linear; */
+  /* transition-timing-function: linear; */
+
+}
+
+@keyframes hex-wh-card {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 10;
+  }
+  
+}
+
+.wh-card-plus-icon {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80%;
+  position: absolute;
+  right: 30px;
+  background-color:  rgb(21, 21, 199);
+}
+
+.wh-card-plus-icon i {
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+.wh-card p {
+  color:  rgb(56, 9, 123);
+  position: absolute;
+  bottom: 120px;
+  font-size: 30px;
+  font-weight: 500;
+  animation-name: hex-wh-card-p;
+  /* animation-delay: 2s; */
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes hex-wh-card-p {
+
+  0% {
+    bottom: -65px;
+  }
+
+  50% {
+    bottom: 120px;
+  }
+  
+  
+}
+
+.bl-card {
+  overflow: hidden;
+  position: relative;
+  height: 275px;
+  width: 290px;
+  background-color: rgb(48, 6, 102);
+  padding: 30px;
+  color: whitesmoke;
+  box-shadow: 10px 10px 30px grey;
+  animation-name: hex-bl-card;
+  /* animation-delay: 1s; */
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  /* animation-timing-function: linear; */
+  /* transition-timing-function: linear; */
+
+}
+
+@keyframes hex-bl-card {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 10;
+  }
+  
+}
+
+.bl-card-plus-icon {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80%;
+  position: absolute;
+  right: 30px;
+  background-color:   rgb(21, 21, 199);
+}
+
+.bl-card-plus-icon i {
+  font-size: 30px;
+  color: rgb(48, 6, 102);
+}
+
+.bl-card p {
+
+  position: absolute;
+  bottom: 120px;
+  font-size: 30px;
+  font-weight: 500;
+  animation-name: hex-bl-card-p;
+  /* animation-delay: 2.2s; */
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+@keyframes hex-bl-card-p {
+
+  0% {
+    bottom: -65px;
+  }
+
+  50% {
+    bottom: 120px;
+  }
+  
+  
+}
+
+
